@@ -1,0 +1,47 @@
+{
+    "drinks": {
+        "latte": {
+            "name": "Latte",
+            "id": "latte"
+        },
+        "cappuccino": {
+            "name": "Cappuccino",
+            "id": "cappuccino"
+        },
+        "flatwhite": {
+            "name": "Flat White",
+            "id": "flatwhite"
+        },
+        "espresso": {
+            "name": "Espresso",
+            "id": "espresso"
+        },
+        "americano": {
+            "name": "Americano",
+            "id": "americano"
+        }
+    },
+    "milk": {
+        "whole": {
+            "name": "Whole",
+            "id": "whole"
+        },
+        "skimmed": {
+            "name": "Skimmed",
+            "id": "skimmed"
+        },
+        "semi-skimmed": {
+            "name": "Semi-Skimmed",
+            "id": "semiskimmed",
+            "default": true
+        },
+        "coconut": {
+            "name": "Coconut",
+            "id": "coconut"
+        },
+        "soya": {
+            "name": "Soya",
+            "id": "soya"
+        }
+    }
+}

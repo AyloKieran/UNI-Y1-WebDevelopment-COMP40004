@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ECMAScript Page</title>
+  <meta name="description" content="This site is for WDOS assignment.">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-192x192.png">
+  <meta name="theme-color" content="#c74693">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>ECMAScript Page</h1>
+    </header>
+    <nav class="navbox">
+      <ul>
+        <li><a href="index.html"><span class="navitem">Home</span></a></li>
+        <li><a href="skills.html"><span class="navitem">Skills</span></a></li>
+        <li><a href="qualifications.html"><span class="navitem">Qualifications</span></a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <header>
+          Drink Ordering System
+        </header>
+        <article>
+          <form method="get" id="drinks">
+            <fieldset id="choice" name="choice">
+              <legend>Choice of Drink</legend>
+            </fieldset>
+            <fieldset>
+              <legend>Size</legend>
+              <p>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+              </p>
+              <p>
+                <input type="radio" id="medium" name="size" value="medium" checked>
+                <label for="medium">Medium</label>
+              </p>
+              <p>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+              </p>
+            </fieldset>
+            <fieldset id="milkField" disabled>
+              <legend>Milk (if required)</legend>
+            </fieldset>
+            <fieldset>
+              <legend>Extras</legend>
+              <p>
+                <input type="checkbox" id="sugar" name="extrasugar" value="sugar">
+                <label for="sugar">Sugar</label>
+              </p>
+              <p>
+                <input type="checkbox" id="cream" name="extracream" value="cream">
+                <label for="cream">Cream</label>
+              </p>
+              <p>
+                <input type="number" id="syrup" name="syrup" value="0" min="0">
+                <label for="syrup">Syrup</label>
+              </p>
+            </fieldset>
+            <p id="drinkCost">Current Drink: £0.00</p>
+            <button type="button" name="addtoorder" id="addtoorder">Add to Order</button>
+            <button type="button" name="setfavourite" id="setfavourite">Add to Favourite</button>
+            <button type="button" name="getfavourite" id="getfavourite">Order Favourite</button>
+          </form>
+          <form>
+            <fieldset>
+              <legend>Current Order</legend>
+              <ul id="currentOrder">
+                <p>No Drinks</p>
+              </ul>
+            </fieldset>
+            <button type="button" name="placeorder" id="placeorder">Place Order</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Kieran Noble</p>
+      <p>(<a href="mailto:kieran@aylo.net">kieran@aylo.net</a>)</p>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

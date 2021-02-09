@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <meta name="description" content="This site is for WDOS assignment.">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-192x192.png">
+  <meta name="theme-color" content="#c74693">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Home Page</h1>
+    </header>
+    <nav class="navbox">
+      <ul>
+        <li><a href="index.html"><span class="navitem">Home</span></a></li>
+        <li><a href="skills.html"><span class="navitem">Skills</span></a></li>
+        <li><a href="qualifications.html"><span class="navitem">Qualifications</span></a></li>
+      </ul>
+    </nav>
+    <main>
+      <picture id="headerimage">
+        <source media="(min-width: 1000px)" srcset="/images/header-small-1x.webp 1x, /images/header-small-2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 750px)" srcset="/images/header-medium-1x.webp 1x, /images/header-medium-2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 500px)" srcset="/images/header-large-1x.webp 1x, /images/header-large-2x.webp 2x"
+          type="image/webp">
+        <img src="/images/header.jpg" alt="A picture of Birmingham, Custard Factory Courtyard, taken by me.">
+      </picture>
+      <section>
+        <header>
+          About Me
+        </header>
+        <article>
+          <div class="image">
+            <!-- Image was taken by a friend, they have allowed me to use it for this site. -->
+            <picture>
+              <source type="image/webp"
+                srcset="/images/knimg-1x.webp 1x, /images/knimg-2x.webp 2x, /images/knimg-3x.webp 3x">
+              <img src="/images/knimg.jpg"
+                alt="A picutre of me, at night, under a mix of blue street lighting and a red neon sign.">
+            </picture>
+          </div>
+          <div class="text">
+            <p>Hi, I'm Kieran!</p>
+            <p>I'm a Computer Science student with an interest in Software and Application Development and Management.
+            </p>
+            <p>In the past I have worked as a video editor as well as a technical support operator. In my personal
+              projects, I have hosted a collection of gaming servers as well as working on interesting art projects that
+              extensively invole the use of technology in an ever changing media environment.</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          Past Projects
+        </header>
+        <article>
+          <div class="image">
+            <!-- Image was created by me and used as a logo for a group that no longer exists. -->
+            <picture>
+              <source type="image/webp"
+                srcset="/images/bsslogo-1x.webp 1x, /images/bsslogo-2x.webp 2x, /images/bsslogo-3x.webp 3x">
+              <img src="/images/bsslogo.jpg" alt="A cartoon cloud with the words 'BackSlashServers' written on it.">
+            </picture>
+          </div>
+          <div class="text">
+              <ul>
+                <li><strong>BackSlashServers</strong> <em>(2015 - 2018)</em><br>
+                  A collection of games servers, administated in my free time. It emassed around 75,000 unique players
+                  playing in excess of 1,000,000 hours. </li>
+                <li><strong>Interactive Robotics Telepresence</strong> <em>(2019)</em><br>
+                  An A-Level Computer Science project that allowed users to remotely control a physical rover robot
+                  through the internet. </li>
+                <li><strong>Photography Projects</strong> <em>(2018 - 2019)</em><br>
+                  2 projects that achived an A* grade:
+                  <ol>
+                    <li>Experimental Imagery</li>
+                    <li>Parts and Sections</li>
+                  </ol>
+                </li>
+              </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          Current Projects
+        </header>
+        <article>
+          <div class="image">
+            <!-- Image was created by me and used as a logo for current projects. -->
+            <picture>
+              <source type="image/webp"
+                srcset="/images/aylologo-1x.webp 1x, /images/aylologo-2x.webp 2x, /images/aylologo-3x.webp 3x">
+              <img src="/images/aylologo.jpg"
+                alt="A colorful lowercase a - the logo for aylo, placed on a background of an urban street.">
+            </picture>
+          </div>
+          <div class="text">
+              <ul>
+                <li><strong>ayloNet (Internal)</strong> <em>(2019-)</em><br>
+                  A collection of home technologies ranging from simple file servers, to custom coded smart home
+                  automations to provide security and ease of use.</li>
+                <li><strong>ayloNet (Customer)</strong> <em>(2020)</em><br>
+                  A custom coded overlay for a study livestreamer that pulls live data from their calendar and displays
+                  it in an easy to follow web interface that their viewers can see their upcoming events with live
+                  countdown and progress as well a live alerts for viewer interactions. Included in this project was a
+                  'be back soon' screen and a controller dashboard.</li>
+              </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Kieran Noble</p>
+      <p>(<a href="mailto:kieran@aylo.net">kieran@aylo.net</a>)</p>
+    </footer>
+  </div>
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+      //wait until page loaded to avoid delaying rendering
+      window.addEventListener('load', function () {
+        //register service worker
+        navigator.serviceWorker.register('serviceworker.js').then(
+          function (registration) {
+            console.log('Service worker registration successful',
+              registration);
+          },
+          function (err) {
+            console.log('Service worker registration failed', err);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>

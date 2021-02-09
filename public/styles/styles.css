@@ -1,0 +1,280 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    margin-left: 1em;
+}
+
+ol {
+    margin-top: 0.5em;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+form {
+    width: 100%;
+}
+
+form p {
+    margin: 0.3em;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-spacing {
+    margin: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.visitButton {
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+    background: #963670;
+    margin-bottom: 1em;
+    float: right;
+}
+
+.visitButton p {
+    margin: 0;
+}
+
+.visitButton p a {
+    color: white;
+    text-decoration: none;
+}
+
+.visitButton p a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    min-width: 240px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: #626973;
+    padding: 1em;
+    margin: 0;
+}
+
+header h1 {
+    color: #edc5dd;
+}
+
+footer {
+    background: #626973;
+    margin: 0;
+    padding: 1em;
+}
+
+.navbox {
+    position: sticky;
+    top: 0;
+}
+
+.navbox ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: #c74693;
+}
+
+.navbox li {
+    flex-grow: 1;
+    border: 2px #963670 solid;
+    height: 50px;
+    width: calc(33% - 4em);
+}
+
+.navbox a {
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#headerimage {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+/* Royalty free images */
+
+.navbox li:nth-of-type(1) a {
+    background-image: url(images/home.svg);
+}
+
+.navbox li:nth-of-type(2) a {
+    background-image: url(images/skills.svg);
+}
+
+.navbox li:nth-of-type(3) a {
+    background-image: url(images/qualifications.svg);
+}
+
+.navbox a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.navitem {
+    position: absolute;
+    top: -1000px;
+}
+
+main {
+    background: #ced5de;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap
+}
+
+section {
+    background: #e6edf5;
+    margin-bottom: 1em;
+    flex: 1 100%;
+}
+
+section header {
+    background: #a2a8b0;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+}
+
+section article img {
+    width: 100%;
+}
+
+section .text {
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+footer a,
+footer p {
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    text-align: center
+}
+
+footer a:hover {
+    color: darkgrey;
+}
+
+/* tablet */
+@media only screen and (min-width: 550px) {
+    #container {
+        width: 80%;
+    }
+
+    .navitem {
+        top: calc(50% - 8px);
+        text-align: center;
+    }
+
+    .navbox a {
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 50px;
+    }
+
+    .navbox a:hover {
+        background-color: #963670;
+        font-weight: bold;
+        width: calc(100% - 50px);
+    }
+
+    section article {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    section article .text {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    section .text {
+        margin: 0;
+    }
+
+    section article img {
+        width: 100%;
+        max-width: 250px
+    }
+
+    .t-spacing {
+        margin: auto;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width : 1000px) {
+    section article img {
+        width: 100%;
+        max-width: 210px
+    }
+
+    section:nth-of-type(1) {
+        font-size: larger;
+    }
+
+    section:nth-of-type(1) article img {
+        max-width: 275px;
+    }
+
+    section:nth-of-type(2) {
+        flex: 1 calc(50% - 0.5em);
+        margin-right: 0.5em;
+    }
+
+    section:nth-of-type(3) {
+        flex: 1 calc(50% - 0.5em);
+        margin-left: 0.5em;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

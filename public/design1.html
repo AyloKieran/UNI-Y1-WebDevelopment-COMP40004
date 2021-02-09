@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Design</title>
+  <meta name="description" content="This site is for WDOS assignment.">
+  <link rel="stylesheet" href="/styles/design1.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-192x192.png">
+  <meta name="theme-color" content="#c74693">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>CSS Design 1</h1>
+    </header>
+    <nav class="navbox">
+      <ul>
+        <li><a href="index.html"><span class="navitem">Home</span></a></li>
+        <li><a href="skills.html"><span class="navitem">Skills</span></a></li>
+        <li><a href="qualifications.html"><span class="navitem">Qualifications</span></a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <header>
+          Rover Project
+        </header>
+        <article>
+          <!-- Screen taken by me of a product that I created for A level Assessment, the one year period of non exposure expired at the start of April so I am allowed to use it in this assignment. I give permission for it to be used in this assignment. -->
+          <div class="image">
+            <picture>
+              <source type="image/webp"
+                srcset="/images/rover-1x.webp 1x, /images/rover-2x.webp 2x, /images/rover-3x.webp 3x">
+              <img src="/images/rover.jpg" alt="A screenshot of the Rover Application">
+            </picture>
+          </div>
+          <div class="text">
+            <p>This was a project that I created for A Level Computer Science, that consisted of physical devices as
+              well as a range of software devices that I created to control a rover remotely from anywhere.</p><br>
+            <p>I created this project as a proof of concept to allow people with mobility issues to 'go out' and explore
+              the areas, not only close to them but around the world, due to the nature of the internet and
+              ever-expanding IOT devices. For this project, I created a web server, control platform, credential
+              manager, client and proxy.</p><br>
+            <p>This project scored 74/75 (A*) and can be found here: <a
+                href="https://dl.aylo.net/CS Project Final.pdf">https://dl.aylo.net/CS Project Final.pdf</a></p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          Personalised Landing Page
+        </header>
+        <article>
+          <div class="image">
+            <!-- Screen taken by me of a product that I created. I give permission for it to be used in this assignment. -->
+            <picture>
+              <source type="image/webp"
+                srcset="/images/landing-1x.webp 1x, /images/landing-2x.webp 2x, /images/landing-3x.webp 3x">
+              <img src="/images/landing.png" alt="A screenshot of aylo.net page">
+            </picture>
+          </div>
+          <div class="text">
+            <p>For this Project, I created a simple landing page for any person that chooses to access aylo.net.</p>
+            <br>
+            <p>I wanted to keep this page free from clutter and wanted it to be professional and include only the
+              relevant information so that in the case that a future employer or client were to look at this site, they
+              would have no abiguity on where to look at some of my previous work or on how to contact me.</p><br>
+            <p>You can see the live page at <a href="https://www.aylo.net">https://www.aylo.net</a></p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <header>
+          Livestream Overlay (External Client)
+        </header>
+        <article>
+          <div class="image">
+            <!-- Screenshot was taken by me of a product that I created, I have permission from the client to use it in this assignment. -->
+            <picture>
+              <source type="image/webp"
+                srcset="/images/lsoverlay-1x.webp 1x, /images/lsoverlay-2x.webp 2x, /images/lsoverlay-3x.webp 3x">
+              <img src="/images/lsoverlay.png" alt="A screenshot of the livestream overlay application">
+            </picture>
+          </div>
+          <div class="text">
+            <p>I was approached by a group of study livestreamers to create a bespoke interactive overlay that they
+              could use to improve the viewer's experience as well as overall information availablity.</p><br>
+            <p>To allow for live, realtime information to be shown, I created an API platform that the calendar client,
+              background client and streamer dashboard can connect to and interact not only with one another, but other
+              APIs as well, such at LastFM, StreamLabs and Google Calendar to get other information from outside of my
+              systems.</p><br>
+            <p>To get the best reliability as well as ease of distrubution, I chose to host the API using secure web
+              sockets, so that all clients can have the same information as soon as it is available.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Kieran Noble</p>
+      <p>(<a href="mailto:kieran@aylo.net">kieran@aylo.net</a>)</p>
+    </footer>
+  </div>
+</body>
+
+</html>
